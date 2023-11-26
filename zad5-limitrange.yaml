@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: zad5-limitrange
+  namespace: zad5
+spec:
+  limits:
+  - default:
+      cpu: 100m
+      memory: 50Mi
+    type: Container
